@@ -4,7 +4,7 @@ const User=require('./user')
 
 app=express()
 // connection mongo db
-mongoose.connect(process.env.MONGO_URI|, 
+mongoose.connect(process.env.MONGO_URI, 
 { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false, })
 .then(()=>console.log("database connected successful"))
 .catch(err=>console.error(err))
